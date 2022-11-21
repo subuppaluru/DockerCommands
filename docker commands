@@ -1,0 +1,436 @@
+
+docker help : provides help
+
+docker --version : provides only client version
+
+docker version : provides client and server versions
+
+
+
+
+docker app
+==========
+
+A tool to build, share and run a Docker App
+
+docker builder
+==============
+
+build       Build an image from a Dockerfile
+
+docker build -t <<image_name>> -f <<Dockerfile_name>> <<location>>
+
+Ex: 1. docker build -t appdemo -f Dockerfile_appdemo .
+    2. docker build -t appdemo -f .
+
+prune       Remove build cache
+
+docker system prune
+
+This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all dangling images
+  - all dangling build cache
+
+docker buildx
+=============
+
+Extended build capabilities with BuildKit
+
+imagetools  Commands to work on images in registry
+
+docker buildx
+
+docker config
+=============
+Manage Docker configs
+
+docker config
+
+
+docker container
+================
+
+Manage containers
+
+docker container
+
+docker context
+================
+It provide the context of docker it includes NAME,DESCRIPTION,DOCKER ENDPOINT,KUBERNETES ENDPOINT and ORCHESTRATOR
+
+Manage contexts
+
+It get the help of docker context command is
+docker context 
+
+
+
+docker commit
+==============
+
+Create a new image from a container's changes
+
+docker commit --help
+
+
+docker image
+=============
+
+Manage images
+
+
+docker manifest
+================
+
+A manifest list allows you to use one name to refer to the same image
+built for multiple architectures.
+
+
+docker network
+=================
+Manage networks
+
+docker node
+============
+Manage Swarm nodes
+
+docker plugin
+==============
+Manage plugins
+
+docker scan
+============
+
+Docker Scan relies upon access to Snyk, a third party provider, do you consent to proceed using Snyk? (y/N)
+
+A tool to scan your images
+
+docker secrets
+===============
+
+Manage Docker secrets
+
+
+docker service
+===============
+Manage services
+
+
+docker stack
+============
+
+Manage Docker stacks
+
+Options:
+      --orchestrator string   Orchestrator to use (swarm|kubernetes|all)
+
+
+docker swarm
+==============
+
+Manage Swarm
+
+docker system
+==============
+
+Manage Docker
+
+docker trust
+=============
+
+Manage trust on Docker images
+
+
+docker volume
+==============
+
+Manage volumes
+
+docker attach
+===============
+
+Attach local standard input, output, and error streams to a running container
+
+
+
+docker build
+=============
+
+Build an image from a Dockerfile
+
+docker cp
+===========
+
+Usage:  docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
+	docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
+
+Copy files/folders between a container and the local filesystem
+
+docker create
+==============
+
+Create a new container
+
+docker diff
+=============
+
+Usage:  docker diff CONTAINER
+
+Inspect changes to files or directories on a container's filesystem
+
+docker events
+===============
+
+Get real time events from the server
+
+docker exec
+============
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+
+docker export
+================
+
+Export a container's filesystem as a tar archive
+
+
+docker history
+==============
+
+Usage:  docker history [OPTIONS] IMAGE
+
+Show the history of an image
+
+docker import
+===============
+
+Usage:  docker import [OPTIONS] file|URL|- [REPOSITORY[:TAG]]
+
+Import the contents from a tarball to create a filesystem image
+
+
+docker info
+=============
+
+Display system-wide information
+
+
+docker inspect
+==============
+
+Usage:  docker inspect [OPTIONS] NAME|ID [NAME|ID...]
+
+Return low-level information on Docker objects
+
+
+docker kill
+=============
+
+Usage:  docker kill [OPTIONS] CONTAINER [CONTAINER...]
+
+Kill one or more running containers
+
+docker load
+============
+requested load from stdin, but stdin is empty
+
+
+docker login
+============
+Log in to a Docker registry
+
+docker logout
+===============
+
+Log out from a Docker registry
+
+
+docker log
+==========
+
+Fetch the logs of a container
+
+
+docker pause
+=============
+
+Usage:  docker pause CONTAINER [CONTAINER...]
+
+Pause all processes within one or more containers
+
+
+docker unpause
+===============
+
+Usage:  docker unpause CONTAINER [CONTAINER...]
+
+Unpause all processes within one or more containers
+
+docker port
+=============
+
+Usage:  docker port CONTAINER [PRIVATE_PORT[/PROTO]]
+
+List port mappings or a specific mapping for the container
+
+
+docker ps  & docker ps -a
+===========================
+List containers
+
+
+docker pull
+===========
+
+Usage:  docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+
+Pull an image or a repository from a registry
+
+docker push
+============
+
+Usage:  docker push [OPTIONS] NAME[:TAG]
+
+Push an image or a repository to a registry
+
+
+docker rename
+===============
+
+Usage:  docker rename CONTAINER NEW_NAME
+
+Rename a container
+
+docker restart
+===============
+
+Usage:  docker restart [OPTIONS] CONTAINER [CONTAINER...]
+
+Restart one or more containers
+
+docker rm
+=============
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...]
+
+Remove one or more containers
+
+
+docker rmi
+============
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+
+
+docker run
+===========
+
+Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Run a command in a new container
+
+
+docker save
+===========
+
+Usage:  docker save [OPTIONS] IMAGE [IMAGE...]
+
+Save one or more images to a tar archive (streamed to STDOUT by default)
+
+
+docker search
+=============
+
+Usage:  docker search [OPTIONS] TERM
+
+Search the Docker Hub for images
+
+
+docker start
+==============
+
+Usage:  docker start [OPTIONS] CONTAINER [CONTAINER...]
+
+Start one or more stopped containers
+
+docker stats
+=============
+
+Display a live stream of container(s) resource usage statistics
+
+
+docker stop
+===========
+
+Stop one or more running containers
+
+docker tag
+============
+
+Usage:  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+
+Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+
+
+docker top
+============
+
+Usage:  docker top CONTAINER [ps OPTIONS]
+
+Display the running processes of a container
+
+
+docker update
+==============
+
+Usage:  docker update [OPTIONS] CONTAINER [CONTAINER...]
+
+Update configuration of one or more containers
+
+
+docker version
+==============
+
+provides client and server versions
+
+
+docker wait
+==============
+
+Usage:  docker wait CONTAINER [CONTAINER...]
+
+Block until one or more containers stop, then print their exit codes
+
+
+Removing all exit status containers
+====================================
+
+sudo docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs sudo docker rm
+
+To delete all the images
+=========================
+
+docker rmi -f $(docker images -aq)
+
+
+
+
+Docker example url
+======================
+
+https://learn.microsoft.com/en-us/visualstudio/docker/tutorials/docker-tutorial
+
+
+
+
+
+
+
+
+
