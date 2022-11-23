@@ -1,0 +1,59 @@
+
+
+Error starting userland proxy: listen tcp4 0.0.0.0:27017: bind: address already in use
+=========================================================================================
+
+docker rm -f $(docker ps -aq)
+
+sudo netstat -pna | grep 27017
+
+sudo lsof -i -P -n | grep 27017
+
+sudo lsof -i -P -n | grep 3306
+
+sudo kill -9 pid
+
+
+
+
+MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+=================================================================
+
+sudo systemctl status mongod
+
+
+sudo systemctl start mongod
+
+sudo systemctl status mongod.service
+
+
+
+Failed to start MongoDB Database Server.
+========================================
+
+Just remove /tmp/mongodb-27017.sock
+
+sudo rm /tmp/mongodb-27017.sock
+
+sudo rm /tmp.mongo.lock
+
+mongodb-27017.sock
+
+
+uninstall mongo db
+==================
+
+sudo yum erase $(rpm -qa | grep mongodb-org)
+
+install mongo db
+==================
+
+https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-red-hat/
+
+
+sudo yum install -y mongodb-org
+
+
+sudo systemctl daemon-reload
+
+

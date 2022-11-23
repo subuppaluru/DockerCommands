@@ -1,0 +1,14 @@
+
+Removing all exit status containers
+====================================
+
+sudo docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs sudo docker rm
+
+To delete all the images
+=========================
+
+docker rmi -f $(docker images -aq)
+
+
+
+

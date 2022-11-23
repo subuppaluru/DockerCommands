@@ -1,0 +1,72 @@
+
+
+https://www.tecmint.com/install-eclipse-ide-in-centos-rhel-fedora/
+
+https://computingforgeeks.com/how-to-set-java_home-on-centos-fedora-rhel/
+
+https://www.javatpoint.com/gradle-java-application
+
+https://tecadmin.net/install-tomcat-9-on-centos-8/
+
+https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.69/bin/apache-tomcat-9.0.69.tar.gz
+
+
+https://www.javatpoint.com/no-main-manifest-attribute
+
+
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.69/bin/apache-tomcat-9.0.69.tar.gz 
+
+tomcat deployment
+
+BasicJavaWebDocker - working - http://localhost:80/BasicJavaWebApplication/#
+
+docker build -t basicjavawebapplication .
+
+docker run --name basicjavaweb1 -d -p 80:8080 basicjavawebapplication
+
+simplegradlejava - working
+
+docker build -t simplegradlejava .
+
+docker run --name basicjavaweb1 -d simplegradlejava
+
+
+https://github.com/miguno/java-docker-build-tutorial - working project name - javadockerexample
+
+rpm -aq | grep -i jdk
+
+sudo yum remove java-1.8.0-openjdk-1.8.0.322.b06-11.el8.x86_64
+
+cd /opt/tomcat/bin
+
+sudo ./catalina.sh run
+
+http://localhost:8080/
+
+
+https://www.javatpoint.com/how-to-build-a-web-application-using-java
+
+https://www.javatpoint.com/how-to-build-a-web-application-using-java
+
+https://www.webucator.com/article/how-to-deploy-a-web-application-using-the-apache-t/
+
+
+https://github.com/jojozhuang/tutorial-projects
+
+docker run -p 8123:8123 javadocerexample
+
+docker build -t javadocerexample .
+
+docker run -d -p 8080:8080 webapp-example
+
+
+spring url
+
+https://github.com/jerelquay/docker-maven-sample
+
+
+docker build -t dockermaven .
+
+docker run -it jspsample
+
+

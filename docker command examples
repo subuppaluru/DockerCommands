@@ -1,0 +1,9 @@
+docker container run --rm --name db01 -d -p 27017:27017 db
+
+docker container ls
+
+docker container run --rm --name app01 -d -p 3000:3000 app
+
+docker container run --rm --name web01 -d -p 8080:80 web
+
+docker build -t web --build-arg PASSWORD=pass123 USERNAME=bob
